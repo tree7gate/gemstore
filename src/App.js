@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import products from './static/data/products.js';
+import Navbar from './components/navbar/navbar.js';
 
 
 class App extends Component {
@@ -25,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      {/*JSX*/}
+      <Navbar />
       </div>
     );
   }
