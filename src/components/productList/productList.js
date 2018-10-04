@@ -13,7 +13,8 @@ class ProductList extends Component {
         <div className="row">
           {
             this.props.products.map(
-              (product, key) => <ProductItem title={product.name} price={product.price} description={product.description} key={product.id} id={product.id} addItem={this.props.addItem}/>
+              (product, key) => <ProductItem title={product.name} price={product.price} description={product.description} key={key} id={product.id} addItem={this.props.addItem}
+              product={product}/>
             )
           }
         </div>
